@@ -9,27 +9,31 @@ written in ALL CAPS near the top of the heart.
 ## The Design (ASCII)
 
 ```
-      _____       _____
-    ,'     `.   ,'     `.
-   /         \ /         \
-  |           V           |
-  |       HARDWARE        |
-   \                     /
-    \                   /
-     \                 /
-      \               /
-       \             /
-        \           /
-         \         /
-          \       /
-           \     /
-            \   /
-             \ /
-              V
+       _.-~~-._     _.-~~-._
+     ,'        `. ,'        `.
+    /            V            \
+   |                           |
+   |  H  A  R  D  W  A  R  E   |
+    \                         /
+     \                       /
+      \                     /
+       \                   /
+        \                 /
+         \               /
+          \             /
+           \           /
+            \         /
+             \       /
+              \     /
+               \   /
+                \ /
+                 V
 ```
 
 The label `HARDWARE` sits horizontally on a single line just below the top
-vertex (the dip between the two lobes), in all capital letters, as required.
+vertex (the dip between the two lobes), in all capital letters, and is
+letter-spaced so it spans nearly the full interior width of the heart with
+just a small margin of whitespace on either side.
 
 ## Role Assignments
 
@@ -50,8 +54,9 @@ sample can move smoothly from one to the next.
 2. **Bus** carries the folded paper from the Folder to the Marker.
 3. **Marker** draws half of a heart outline against the folded edge, then
    writes the word **HARDWARE** in all capital letters horizontally just below
-   the top vertex of the heart (the dip between the two lobes), as shown in
-   the design above.
+   the top vertex of the heart (the dip between the two lobes), sized and
+   spaced so it spans nearly the full interior width of the heart with only a
+   small margin of whitespace on either side, as shown in the design above.
 4. **Bus** carries the marked, folded paper from the Marker to the Cutter.
 5. **Cutter** cuts along the outline drawn by the Marker, keeping the fold
    intact so the heart stays symmetric.
