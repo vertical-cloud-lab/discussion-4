@@ -45,20 +45,25 @@ sample can move smoothly from one to the next.
 | **Folder** | Folds the paper                      | Folds the pink paper in half so the heart is symmetric when cut.                     |
 | **Marker** | Writes / draws                       | Draws the half-heart outline on the folded edge and writes **HARDWARE** near the top.|
 | **Cutter** | Holds the scissors                   | Cuts along the outline drawn by the Marker to produce the heart shape.               |
-| **Bus**    | Moves the sample between teammates   | Carries the paper from Folder → Marker → Cutter → final display, in order.           |
+| **Bus**    | Moves the sample between teammates   | Carries the paper forward only: Folder → Marker → Cutter → final display. The flow is one-way; the Bus never returns the sample to a previous step. |
 
 ## Steps
 
+The pipeline is **one-way**: each role finishes its work and hands the sample
+forward via the Bus. The sample never returns to a previous step, so each
+role must complete its task correctly before passing it on.
+
 1. **Folder** takes a sheet of pink paper and folds it in half (left edge to
-   right edge) to create a symmetric guide for the heart.
-2. **Bus** carries the folded paper from the Folder to the Marker.
+   right edge) to create a symmetric guide for the heart, then hands it off.
+2. **Bus** carries the folded paper forward from the Folder to the Marker.
 3. **Marker** draws half of a heart outline against the folded edge, then
    writes the word **HARDWARE** in all capital letters horizontally just below
    the top vertex of the heart (the dip between the two lobes), sized and
    spaced so it spans nearly the full interior width of the heart with only a
    small margin of whitespace on either side, as shown in the design above.
-4. **Bus** carries the marked, folded paper from the Marker to the Cutter.
+4. **Bus** carries the marked, folded paper forward from the Marker to the
+   Cutter.
 5. **Cutter** cuts along the outline drawn by the Marker, keeping the fold
-   intact so the heart stays symmetric.
-6. **Bus** carries the cut heart back to the team and unfolds it to reveal
-   the finished pink heart with **HARDWARE** displayed near the top.
+   intact so the heart stays symmetric, and unfolds the finished heart.
+6. **Bus** carries the finished heart forward from the Cutter to the final
+   display, where the pink heart with **HARDWARE** near the top is shown.
