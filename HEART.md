@@ -9,27 +9,27 @@ written in ALL CAPS near the top of the heart.
 ## The Design (ASCII)
 
 ```
-        ___           ___
-      ,'   `.       ,'   `.
-     /  HARD `.   ,' WARE  \
-    (          \ /          )
-     \          V          /
-      \                   /
-       \                 /
-        \               /
-         \             /
-          \           /
-           \         /
-            \       /
-             \     /
-              \   /
-               \ /
-                V
+      _____       _____
+    ,'     `.   ,'     `.
+   /         \ /         \
+  |           V           |
+  |       HARDWARE        |
+   \                     /
+    \                   /
+     \                 /
+      \               /
+       \             /
+        \           /
+         \         /
+          \       /
+           \     /
+            \   /
+             \ /
+              V
 ```
 
-The label `HARDWARE` is split across the two lobes (`HARD` on the left lobe,
-`WARE` on the right lobe) so it sits near the top of the heart in all capital
-letters, as required.
+The label `HARDWARE` sits horizontally on a single line just below the top
+vertex (the dip between the two lobes), in all capital letters, as required.
 
 ## Role Assignments
 
@@ -49,8 +49,9 @@ sample can move smoothly from one to the next.
    right edge) to create a symmetric guide for the heart.
 2. **Bus** carries the folded paper from the Folder to the Marker.
 3. **Marker** draws half of a heart outline against the folded edge, then
-   writes the word **HARDWARE** in all capital letters near the top of the
-   heart (split across the two lobes as shown in the design above).
+   writes the word **HARDWARE** in all capital letters horizontally just below
+   the top vertex of the heart (the dip between the two lobes), as shown in
+   the design above.
 4. **Bus** carries the marked, folded paper from the Marker to the Cutter.
 5. **Cutter** cuts along the outline drawn by the Marker, keeping the fold
    intact so the heart stays symmetric.
